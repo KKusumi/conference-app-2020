@@ -3,7 +3,7 @@ package dependencies
 @Suppress("unused", "MayBeConstant")
 object Dep {
     object GradlePlugin {
-        val android = "com.android.tools.build:gradle:3.6.0-rc03"
+        val android = "com.android.tools.build:gradle:4.1.1"
         val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.61"
         val kotlinSerialization = "org.jetbrains.kotlin:kotlin-serialization:1.3.61"
         val playServices = "com.google.gms:google-services:4.3.3"
@@ -11,7 +11,6 @@ object Dep {
             "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.0-alpha03"
         val jetifier = "com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta05"
         val licensesPlugin = "com.google.android.gms:oss-licenses-plugin:0.10.2"
-        val crashlytics = "com.google.firebase:firebase-crashlytics-gradle:2.0.0-beta01"
         val iconRibbonPlugin = "com.akaita.android:easylauncher:1.3.1"
         val gradleVersionsPlugin = "com.github.ben-manes:gradle-versions-plugin:0.22.0"
         val releaseHub = "com.releaseshub:releases-hub-gradle-plugin:1.3.1"
@@ -111,7 +110,6 @@ object Dep {
         val core = "com.google.firebase:firebase-core:16.0.4"
         val firestoreKtx = "com.google.firebase:firebase-firestore-ktx:20.2.0"
         val auth = "com.google.firebase:firebase-auth:18.1.0"
-        val crashlytics = "com.google.firebase:firebase-crashlytics:17.0.0-beta01"
         val analytics = "com.google.firebase:firebase-analytics:17.2.2"
         val messaging = "com.google.firebase:firebase-messaging:20.1.0"
     }

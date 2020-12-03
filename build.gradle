@@ -29,7 +29,6 @@ buildscript {
         classpath Dep.GradlePlugin.licensesPlugin
         classpath Dep.GradlePlugin.iconRibbonPlugin
         classpath Dep.GradlePlugin.gradleVersionsPlugin
-        classpath Dep.GradlePlugin.crashlytics
         classpath Dep.GradlePlugin.releaseHub
     }
 }

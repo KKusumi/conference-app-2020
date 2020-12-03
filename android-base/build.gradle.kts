@@ -6,7 +6,6 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
-    id("com.google.firebase.crashlytics")
     id("com.google.android.gms.oss-licenses-plugin")
     id("com.releaseshub.gradle.plugin")
 }
@@ -20,7 +19,7 @@ android {
         versionCode = Versions.androidVersionCode
         versionName = Versions.androidVersionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunnerArguments = mapOf("clearPackageData" to "true")
+        testInstrumentationRunnerArguments["clearPackageData"] = "true"
     }
     signingConfigs {
         getByName("debug") {
@@ -114,7 +113,6 @@ dependencies {
     implementation(Dep.AndroidX.activityKtx)
     implementation(Dep.AndroidX.Work.runtimeKtx)
     implementation(Dep.Firebase.firestoreKtx)
-    implementation(Dep.Firebase.crashlytics)
     implementation(Dep.Firebase.analytics)
     implementation(Dep.AndroidX.emoji)
 

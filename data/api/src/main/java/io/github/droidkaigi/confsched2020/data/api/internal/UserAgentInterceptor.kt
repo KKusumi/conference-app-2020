@@ -8,7 +8,7 @@ internal class UserAgentInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         return chain.proceed(
             chain.request().newBuilder().apply {
-                addHeader("User-Agent", "official-app-2020/${BuildConfig.VERSION_CODE} gzip")
+//                addHeader("User-Agent", "official-app-2020/${BuildConfig.VERSION_CODE} gzip")
             }.build()
         )
     }
